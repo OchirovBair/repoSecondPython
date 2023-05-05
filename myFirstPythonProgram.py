@@ -1,5 +1,4 @@
-def get_sum(a, b) -> int:
-    return a+b
-
-
-print(get_sum(5, 6))
+a = 15 // (16 % 7)
+b = 34 % a * 5 - 29 % 5 * 2
+print(a)
+print(b)
