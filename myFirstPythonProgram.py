@@ -1,7 +1,7 @@
-n, k = int(input()), int(input())
-if n == k:
-    print("Don't know")
-elif n > k:
-    print('NO')
+a, b, c = int(input()), int(input()), int(input())
+if a == b == c:
+    print('Равносторонний')
+elif a == b != c or a != b == c or a == c != b:
+    print('Равнобедренный')
 else:
-    print('YES')
+    print('Разносторонний')
