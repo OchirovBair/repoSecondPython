@@ -1,13 +1,21 @@
-a, b, c = int(input()), int(input()), int(input())
-if a > b > c:
-    print(b)
-elif a > c > b:
-    print(c)
-elif c > a > b:
-    print(a)
-elif c > b > a:
-    print(b)
-elif b > c > a:
-    print(c)
-elif b > a > c:
-    print(a)
+x = int(input())
+y = int(input())
+str = input()
+result = 0
+if y == 0 and str == '/':
+    print('На ноль делить нельзя!')
+elif str == '/' or str == '*' or str == '+' or str == '-':
+    if str == '*':
+        result = x * y
+        print(result)
+    elif str == '/':
+        result = x / y
+        print(result)
+    elif str == '+':
+        result = x + y
+        print(result)
+    elif str == '-':
+        result = x - y
+        print(result)
+else:
+    print('Неверная операция')
