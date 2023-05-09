@@ -1,4 +1,7 @@
-a = 15 // (16 % 7)
-b = 34 % a * 5 - 29 % 5 * 2
-print(a)
-print(b)
+n, k = int(input()), int(input())
+if n == k:
+    print("Don't know")
+elif n > k:
+    print('NO')
+else:
+    print('YES')
