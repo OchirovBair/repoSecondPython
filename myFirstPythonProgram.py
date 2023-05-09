@@ -1,16 +1,26 @@
-color1, color2 = input(), input()
-if (color1 == 'красный' or color1 == 'синий' or color1 == 'желтый') and (color2 == 'красный' or color2 == 'синий' or color2 == 'желтый'):
-    if (color1 == 'красный' and color2 == 'синий') or (color1 == 'синий' and color2 == 'красный'):
-        print('фиолетовый')
-    elif (color1 == 'красный' and color2 == 'желтый') or (color1 == 'желтый' and color2 == 'красный'):
-        print('оранжевый')
-    elif (color1 == 'синий' and color2 == 'желтый') or (color1 == 'желтый' and color2 == 'синий'):
-        print('зеленый')
-    elif color1 == 'желтый' and color2 == 'желтый':
-        print('желтый')
-    elif color1 == 'синий' and color2 == 'синий':
-        print('синий')
-    elif color1 == 'красный' and color2 == 'красный':
-        print('красный')
+num = int(input())
+if num < 0 or num > 36:
+    print('ошибка ввода')
 else:
-    print('ошибка цвета')
+    if num == 0:
+        print('зеленый')
+    elif 1 <= num <= 10:
+        if num % 2 == 0:
+            print('черный')
+        else:
+            print('красный')
+    elif 11 <= num <= 18:
+        if num % 2 == 0:
+            print('красный')
+        else:
+            print('черный')
+    elif 19 <= num <= 28:
+        if num % 2 == 0:
+            print('черный')
+        else:
+            print('красный')
+    elif 29 <= num <= 36:
+        if num % 2 == 0:
+            print('красный')
+        else:
+            print('черный')
